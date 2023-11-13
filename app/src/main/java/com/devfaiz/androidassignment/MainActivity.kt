@@ -1,5 +1,6 @@
 package com.devfaiz.androidassignment
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         TabLayoutMediator(tabView,viewPager){tab,position->
             tab.text = frags[position]
         }.attach()
+        
         setContentView(binding.root)
     }
 }

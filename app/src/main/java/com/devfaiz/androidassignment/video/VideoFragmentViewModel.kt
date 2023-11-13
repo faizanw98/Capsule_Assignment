@@ -31,8 +31,6 @@ class VideoFragmentViewModel(application: Application): AndroidViewModel(applica
         exoPlayer?.seekTo(playBackPosition)
         exoPlayer?.playWhenReady = playWhenReady
         exoPlayer?.prepare()
-        exoPlayer?.play()
-
     }
     fun releasePlayer(){
         exoPlayer?.let {player->

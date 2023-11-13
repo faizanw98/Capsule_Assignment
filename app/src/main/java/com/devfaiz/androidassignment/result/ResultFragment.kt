@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
 import com.devfaiz.androidassignment.R
 import com.devfaiz.androidassignment.databinding.FragmentResultBinding
+import com.devfaiz.androidassignment.quiz.QuizFragmentViewModel
 
 
 class ResultFragment : Fragment() {

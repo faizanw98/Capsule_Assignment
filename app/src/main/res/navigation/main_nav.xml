@@ -7,4 +7,32 @@
         android:id="@+id/mainActivity"
         android:name="com.devfaiz.androidassignment.MainActivity"
         android:label="MainActivity" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.devfaiz.androidassignment.video.VideoFragment"
+        android:label="VideoFragment" >
+        <action
+            android:id="@+id/action_videoFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.devfaiz.androidassignment.result.ResultFragment"
+        android:label="ResultFragment" />
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.devfaiz.androidassignment.notes.NotesFragment"
+        android:label="NotesFragment" >
+        <action
+            android:id="@+id/action_notesFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.devfaiz.androidassignment.quiz.QuizFragment"
+        android:label="QuizFragment" >
+        <action
+            android:id="@+id/action_quizFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
 </navigation>

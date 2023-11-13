@@ -24,7 +24,6 @@ class VideoFragment : Fragment() {
         binding.viewModel= viewModel
         viewModel.initializePlayer(player)
         binding.videoPlayer.player = viewModel.exoPlayer
-
         return binding.root
     }
 
