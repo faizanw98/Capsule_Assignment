@@ -2,12 +2,12 @@ package com.devfaiz.androidassignment
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
-import com.devfaiz.androidassignment.Notes.NotesFragment
-import com.devfaiz.androidassignment.Quiz.QuizFragment
-import com.devfaiz.androidassignment.Result.ResultFragment
-import com.devfaiz.androidassignment.Video.VideoFragment
+import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
+import androidx.viewpager2.widget.ViewPager2.SCROLL_STATE_DRAGGING
+import com.devfaiz.androidassignment.notes.NotesFragment
+import com.devfaiz.androidassignment.quiz.QuizFragment
+import com.devfaiz.androidassignment.result.ResultFragment
+import com.devfaiz.androidassignment.video.VideoFragment
 import com.devfaiz.androidassignment.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayoutMediator
 

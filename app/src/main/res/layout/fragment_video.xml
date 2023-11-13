@@ -3,19 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+        <variable
+            name="viewModel"
+            type="com.devfaiz.androidassignment.video.VideoFragmentViewModel" />
 
     </data>
 
-    <FrameLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Video.VideoFragment">
+        tools:context=".video.VideoFragment">
 
         <!-- TODO: Update blank fragment layout -->
-        <TextView
+        <androidx.media3.ui.PlayerView
+            android:id="@+id/videoPlayer"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Video" />
+            android:layout_height="match_parent"/>
 
-    </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
